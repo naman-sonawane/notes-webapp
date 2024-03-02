@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+:root {
+    --darkgreen: #051f00;
+    --darkblue: rgb(3, 3, 37);
+    --white: #faf0e6;
+  }
+
+button {
+    font-family: 'Nunito', sans-serif;
+  }
+
+body {
+    margin: 0;
+    font-family: "Nunito";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(0, 10, 27), rgb(0, 27, 15));
+}
+
+#container {
+    border-radius: 10px;
+    overflow-y: auto;
+    width: 80vw;
+    height: 82vh;
+    background-color: rgb(28, 40, 51);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#blankDiv {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addNote {
+    border: 2px solid;
+    border-color: rgb(87, 104, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#list-header {
+    display: flex;
+    align-items: center;
+}
+
+#addNote:hover {
+    transition: 0.3s;
+    background-color: rgb(49, 63, 75);
+}
+
+#addNote i {
+    font-size: 70px;
+    color: rgb(219, 218, 218);
+    font-weight: lighter;
+}
+
+
+
+::selection{
+    background-color: rgb(49, 19, 88);
+    -webkit-text-fill-color: rgb(123, 218, 255);
+}
+#list-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#editBtn i {
+    -webkit-text-fill-color: black;
+}
+
+li {
+    background-color: rgb(54, 63, 77);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;   
+}
+
+li span {
+    font-size: 20;  
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    width: 200px;
+    -webkit-text-fill-color: rgb(184, 184, 184);
+}
+
+#editBtn, #deleteBtn {
+    background-color: rgb(0, 10, 27);
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 10px;
+    width: 60px;
+}
+
+#editBtn {
+    background-color: aliceblue;
+}
+
+#deleteBtn:hover {
+    background-color: rgb(34, 5, 5);
+}
+
+#editBtn:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 280px;
+    background-color: rgb(40, 56, 70);
+    border: 2px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 3px solid #093864
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#editing-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: rgb(63, 63, 63);
+    border: 1px solid rgb(126, 126, 126);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headerTitle {
+    text-align: center;
+    -webkit-text-fill-color: white;
+}
